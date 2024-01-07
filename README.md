@@ -10,6 +10,7 @@ Once started, the application prompts the user to enter a message and a key, the
 
 It uses three encryption methods:
 =================================================================================================================================================================================================================
+ 
  1. Adding the Nth char from the key to the corresponding Nth char from the message (in case the key is too short it starts from the beginning again and repeats until the needed length is met)
     Example:
 Text:       T   h   i   s       i   s       m   y       m   e   s   s   a   g   e
@@ -19,7 +20,9 @@ Key:        k   e   y   k   e   y   k   e   y   k   e   y   k   e   y   k   e   
 ASCII:      107 101 121 107 101 121 107 101 121 107 101 121 107 101 121 107 101 121
 
 Encrypted:  191 205 232 220 139 216 232 220 218 223 154 218 208 216 214 198 208 222
+
 =================================================================================================================================================================================================================
+
 2. Adding a constant value to every character from the message
   Example:
 Text:       T   h   i   s       i   s       m   y       m   e   s   s   a   g   e
@@ -29,7 +32,9 @@ Key:        k   e   y
 
 Key Size:   3   3   3   3   3   3   3   3   3   3   3   3   3   3   3   3   3   3
 Encrypted:  87  107 108 118 35  108 118 35  112 124 35  112 104 118 118 100 108 124
+
 =================================================================================================================================================================================================================
+
 3. For the third method we either add X, subtract X, or do nothing based on the value of the Nth key-character mod3
    ->case=1 adding X
    ->case=2 subtracting X
@@ -45,4 +50,5 @@ ASCII:      107 101 121 107 101 121 107 101 121 107 101 121 107 101 121 107 101 
 X (mod 11): 5   4   2   5   4   2   5   4   2   5   4   2   5   4   2   5   4   2
 
 Encrypted:  89  100 107 120 36  109 117 34  110 129 34  114 105 129 129 103 113 128
+
 =================================================================================================================================================================================================================
