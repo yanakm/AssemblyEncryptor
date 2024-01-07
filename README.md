@@ -2,11 +2,17 @@
 A small application for encrypting and decrypting a text message (x86 DOS tasm), the regularity of the encryption methods make it easier to decode, as it cyclical in nature, but it is still a fun exercise.
 
 User interface:
+
 Once started, the application prompts the user to enter a message and a key, then either ecnrypts it or decrypts it:
+
 ->in case the user presses (1) the message is put through the encryption methods 1 to 3 and displays the encrypted message
+
 ->in case the user presses (2) the message is put through the decryption methods 3 to 1 and displays the encrypted message
+
 ->a message in its initial form (that the user provided) cannot be decrypted futher
+
 ->a message cannot be encrypted more than three times as a loss of data is pesent otherwise
+
 
 It uses three encryption methods:
 =================================================================
